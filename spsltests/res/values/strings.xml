@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">Shared Preferences Shopping List</string>
+    
+    <string name="emptyText"></string>
+    
+    <string name="dataFile">demo.android.spsl.data"></string>
+
+</resources>

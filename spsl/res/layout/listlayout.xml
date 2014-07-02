@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@id/labelItemName"
+        android:layout_width="0sp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_weight="2"
+        />
+
+     <ImageButton
+        android:id="@id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:onClick="buttonDeleteClicked"
+        android:contentDescription="@string/emptyText"
+        android:src="@android:drawable/ic_menu_delete" />
+    
+    
+</LinearLayout> 
