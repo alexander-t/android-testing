@@ -2,8 +2,6 @@ package demo.android.spsl;
 
 import java.util.List;
 
-import demo.android.spsl.R;
-import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,7 +24,7 @@ public class DeletableItemAdapter extends ArrayAdapter<String> {
 
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
-		LayoutInflater inflater = ((Activity) getContext()).getLayoutInflater();
+		LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		View row = inflater.inflate(layoutResourceId, parent, false);
 		TextView label = (TextView) row.findViewById(R.id.labelItemName);
 		ImageButton button = (ImageButton) row.findViewById(R.id.buttonDelete);
